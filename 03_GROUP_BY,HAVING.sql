@@ -105,7 +105,7 @@ WHERE DEPT_CODE = 'D5' OR SALARY > 3000000;
 -- 부서코드가 D5인 사원의 사번, 이름, 부서코드, 급여 조회
 SELECT EMP_ID, EMP_NAME, DEPT_CODE, SALARY
 FROM EMPLOYEE
-WHERE DEPT_CODE = 'D5' OR SALARY > 3000000;
+WHERE DEPT_CODE = 'D5';
 
 -- 급여가 300만원 초과인 사원의 사번, 이름, 부서코드, 급여 조회
 SELECT EMP_ID, EMP_NAME, DEPT_CODE, SALARY
@@ -170,4 +170,6 @@ SELECT EMP_ID, EMP_NAME, DEPT_CODE, SALARY
 FROM EMPLOYEE
 WHERE SALARY > 3000000
 ORDER BY DEPT_CODE;
+
+-----------------------------------------------------------------
 
