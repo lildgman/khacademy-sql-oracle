@@ -12,9 +12,8 @@
     1) 컬럼 추가 / 수정 / 삭제
     2) 제약조건 추가 / 삭제 --> 수정은 불가(삭제 후 다시 추가해야함)
     3) 컬럼명 / 제약조건명 / 테이블명 변경 
-
-    
 */
+
 -- 1) 컬럼 추가 / 수정 / 삭제
 -- DEPT_TABLE에 CNAME 컬럼 추가
 ALTER TABLE DEPT_TABLE ADD CNAME VARCHAR2(20);
@@ -25,6 +24,7 @@ ALTER TABLE DEPT_TABLE add LNAME VARCHAR2(20) DEFAULT '한국';
 -- 1_2 컬럼 수정(MODIFY)
 --> 데이터 타입 수정: MODIFY 컬럼명 바꾸고자하는 데이터타입
 --> DEFAULT값 수정: MODIFY 컬럼명 DEFAULT 바꾸고자하는 기본값
+
 ALTER TABLE DEPT_TABLE MODIFY DEPT_ID CHAR(5);
 --ALTER TABLE DEPT_TABLE MODIFY DEPT_ID number; -- 데이터타입에 대한 형식 오류가 발생
 --ALTER TABLE DEPT_TABLE MODIFY DEPT_TITLE VARCHAR2(20); -- 크기 오류가 발생
