@@ -178,8 +178,7 @@ END;
 --  사용자가 입력한 사번의 사원의 사번, 이름, 부서명, 근무구가코드 조회 후 
 --  각 변수에 대입
 --  NCODE 값이 KO일 경우 --> TEAM -->'국내팀' 대입
---          그게 아닐경우 --> TEAM -->'해외팀' EODLQ
-
+--          그게 아닐경우 --> TEAM -->'해외팀' 대입
 --  사번, 이름, 부서, 소속에 대해서 출력
 --END;
 --/
@@ -201,8 +200,8 @@ BEGIN
     WHERE EMP_ID = &사번;
     
     IF NCODE = 'KO'
-    THEN TEAM := '국내팀';
-    ELSE TEAM := '해외팀';
+        THEN TEAM := '국내팀';
+        ELSE TEAM := '해외팀';
     END IF;
     
     DBMS_OUTPUT.PUT_LINE('사번: ' || EID);

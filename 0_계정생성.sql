@@ -2,8 +2,9 @@
 /*
     여러줄 주석
 */
-SELECT * FROM DBA_USERS; -- 현재 모든 계정들에 대해서 조회하는 명령문
---명령문 한 구문 실행(위쪽 재생 버튼 or ctrl+enter
+SELECT * FROM DBA_USERS;
+-- 현재 모든 계정들에 대해서 조회하는 명령문
+--명령문 한 구문 실행(위쪽 재생 버튼 or ctrl+enter)
 
 --일반 사용자 계정을 생성하는 구문(오직 관리자 계정에서만 할 수 있음)
 --[표현법] CREATE USER 계정명 IDENTIFIED BY 비밀번호;
